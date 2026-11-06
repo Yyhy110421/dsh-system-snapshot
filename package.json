@@ -1,0 +1,58 @@
+{
+  "name": "dsh-system-snapshot",
+  "version": "0.1.0",
+  "description": "DSH 系统快照插件：改系统前给白名单注册表、hosts、环境变量、服务、防火墙、计划任务留快照，可对比；只恢复注册表、hosts、用户环境变量。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./core": "./lib/core.js"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "snapshot",
+    "windows",
+    "registry",
+    "backup"
+  ],
+  "license": "MIT",
+  "author": "Yyhy110421",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yyhy110421/dsh-system-snapshot.git"
+  },
+  "homepage": "https://github.com/Yyhy110421/dsh-system-snapshot",
+  "bugs": {
+    "url": "https://github.com/Yyhy110421/dsh-system-snapshot/issues"
+  },
+  "scripts": {
+    "test": "node test/manual.mjs && node test/plugin.mjs",
+    "test:integration": "node test/integration.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

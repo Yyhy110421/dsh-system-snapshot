@@ -1,0 +1,19 @@
+- insert:
+    - id: system-snapshot
+      name: 'dsh-system-snapshot'
+      config:
+        registryKeys:
+          - 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
+          - 'HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize'
+          - 'HKCU\Control Panel\Desktop'
+          - 'HKCU\Software\Microsoft\Windows\CurrentVersion\Run'
+          - 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
+        includeHosts: true
+        includeEnvUser: true
+        includeEnvMachine: true
+        includeServices: true
+        includeFirewall: true
+        includeScheduledTasks: true
+        maxSnapshots: 30
+        keepDays: 30
+        diffMaxItems: 200

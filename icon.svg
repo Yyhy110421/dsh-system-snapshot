@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="系统快照">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <path d="M15 23c0-4 7.6-7 17-7s17 3 17 7-7.6 7-17 7-17-3-17-7Z" fill="#38bdf8"/>
+  <path d="M15 23v9c0 4 7.6 7 17 7s17-3 17-7v-9" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+  <path d="M15 32v9c0 4 7.6 7 17 7s17-3 17-7v-9" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+  <circle cx="47" cy="46" r="11" fill="#fbbf24"/>
+  <path d="M42 46l3.2 3.2L52.5 42" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
